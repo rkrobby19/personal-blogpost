@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "format:check": "npx prettier --check ./pages",
-    "format:fix": "npx prettier --write ./pages",
+    "prettier": "npx prettier --check .",
+    "prettier:fix": "npx prettier --write .",
+    "format": "npm run prettier:fix && npm run lint:fix",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -17,9 +18,11 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "bootstrap": "^5.2.3",
     "eslint-config-next": "13.0.7",
     "next": "13.0.7",
     "react": "18.2.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

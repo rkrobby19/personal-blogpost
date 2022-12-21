@@ -2,4 +2,7 @@
 # Ignore artifacts:
 build
 coverage
+
+# Ignore folders
+/.next
 }

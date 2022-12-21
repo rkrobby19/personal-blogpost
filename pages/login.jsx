@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
+import LoginForm from '../components/login';
 
 function Login() {
   return (
@@ -8,7 +9,7 @@ function Login() {
         <title>Login Page</title>
       </Head>
       <main>
-        <h1>Login Page</h1>
+        <LoginForm />
       </main>
     </>
   );
