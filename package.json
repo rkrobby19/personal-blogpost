@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "format:check": "npx prettier --check ./pages",
+    "format:fix": "npx prettier --write ./pages",
     "prepare": "husky install"
   },
   "lint-staged": {
