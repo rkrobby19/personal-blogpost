@@ -6,7 +6,7 @@ function Login() {
   return (
     <>
       <Head>
-        <title>Login Page</title>
+        <title>Login</title>
       </Head>
       <main>
         <LoginForm />

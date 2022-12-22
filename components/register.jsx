@@ -3,10 +3,18 @@ import { Button, Container, Form } from 'react-bootstrap';
 import styles from './Login.module.css';
 import SignupMenu from './signupMenu';
 
-function LoginForm() {
+function RegisterForm() {
   return (
     <Container className={styles.container}>
       <Form>
+        <Form.Group className="mb-3">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter name" />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Username</Form.Label>
+          <Form.Control type="text" placeholder="Enter username" />
+        </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Email address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" />
@@ -22,13 +30,11 @@ function LoginForm() {
           <div className="col d-flex justify-content-center align-items-center">
             {/* Checkbox */}
             <Form.Group className="mb-3">
-              <Form.Check type="checkbox" label="Check me out" />
+              <Form.Check
+                type="checkbox"
+                label="I have read and agree to the terms"
+              />
             </Form.Group>
-          </div>
-
-          <div className="col">
-            {/* Simple link */}
-            <a href="#!">Forgot password?</a>
           </div>
         </div>
 
@@ -39,16 +45,10 @@ function LoginForm() {
           </Button>
         </div>
 
-        {/* Register buttons */}
-        <div className="text-center">
-          <p>
-            Not a member? <a href="#!">Register</a>
-          </p>
-          <SignupMenu />
-        </div>
+        <SignupMenu />
       </Form>
     </Container>
   );
 }
 
-export default LoginForm;
+export default RegisterForm;
