@@ -1,19 +1,20 @@
+import Link from 'next/link';
 import React from 'react';
 import { Button, Container, Form } from 'react-bootstrap';
 import styles from './Login.module.css';
-import SignupMenu from './signupMenu';
+import SignupMenu from './SignupMenu';
 
 function LoginForm() {
   return (
     <Container className={styles.container}>
       <Form>
         <Form.Group className="mb-3">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
+          {/* <Form.Label>Email address</Form.Label> */}
+          <Form.Control type="email" placeholder="Email" />
         </Form.Group>
 
         <Form.Group className="mb-3">
-          <Form.Label>Password</Form.Label>
+          {/* <Form.Label>Password</Form.Label> */}
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
 
@@ -28,7 +29,7 @@ function LoginForm() {
 
           <div className="col">
             {/* Simple link */}
-            <a href="#!">Forgot password?</a>
+            <Link href="#!">Forgot password?</Link>
           </div>
         </div>
 
@@ -42,7 +43,7 @@ function LoginForm() {
         {/* Register buttons */}
         <div className="text-center">
           <p>
-            Not a member? <a href="#!">Register</a>
+            Not a member? <Link href="/register">Register</Link>
           </p>
           <SignupMenu />
         </div>

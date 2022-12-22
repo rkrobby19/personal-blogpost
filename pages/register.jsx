@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
-import RegisterForm from '../components/register';
+import MyNavbar from '../components/MyNavbar';
+import RegisterForm from '../components/RegisterForm';
 
 function Register() {
   return (
@@ -9,6 +10,7 @@ function Register() {
         <title>Register</title>
       </Head>
       <main>
+        <MyNavbar />
         <RegisterForm />
       </main>
     </>
