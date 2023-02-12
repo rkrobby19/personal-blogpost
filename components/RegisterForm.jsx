@@ -35,12 +35,7 @@ function RegisterForm() {
   return (
     <Container className={styles.container}>
       <Form>
-        {/* <Form.Group className="mb-3">
-          <Form.Control type="text" placeholder="Name" />
-        </Form.Group>
-        <Form.Group className="mb-3">
-          <Form.Control type="text" placeholder="Username" />
-        </Form.Group> */}
+        <h2 className={styles.tittle}>Sign Up</h2>
         <Form.Group className="mb-3">
           <Form.Control
             type="email"

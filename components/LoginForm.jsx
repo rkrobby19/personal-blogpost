@@ -34,6 +34,7 @@ function LoginForm() {
   };
   return (
     <Container className={styles.container}>
+      <h2 className={styles.tittle}>Log In</h2>
       <Form>
         <Form.Group className="mb-3">
           <Form.Control

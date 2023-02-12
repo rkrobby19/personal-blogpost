@@ -21,6 +21,9 @@ function MyNavbar() {
             <Link className={styles.text} href="/login">
               Sign In
             </Link>
+            <Link className={styles.text} href="/register">
+              Sign Up
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
